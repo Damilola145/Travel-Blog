@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Explore Africa's Stunning Destinations - Travel Blog</title>
+		
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E56B1F', // warm orange/terracotta
+                        secondary: '#1F8A70', // rich green
+                        accent: '#FFB100', // gold accent
+                        dark: '#2D3047', // deep blue/slate
+                        light: '#F9F4F0', // off-white/cream
+                    }
+                }
+            }
+        }
+    
+		</script>
+		
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+		
+		<!-- React and React DOM -->
+		<script src="https://cdn.ezsite.ai/static/react.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/react-dom.production.min.js"></script>
+		
+		<!-- React Router -->
+		<script src="https://cdn.ezsite.ai/static/5.3.0/history.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/6.3.0/react-router.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/6.3.0/react-router-dom.production.min.js"></script>
+		
+		<!-- Babel -->
+		<script src="https://cdn.ezsite.ai/static/babel.min.js"></script>
+		
+		<!-- Custom CSS -->
+		<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #2D3047;
+            background-color: #F9F4F0;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-image {
+            height: 80vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+        }
+        
+        .destination-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .navbar-link {
+            position: relative;
+        }
+        
+        .navbar-link:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #E56B1F;
+            transition: width 0.3s ease;
+        }
+        
+        .navbar-link:hover:after,
+        .navbar-link.active:after {
+            width: 100%;
+        }
+    
+		</style>
+		<script project-code="1gi285bn1iy9" src="https://ezsite.ai/ezsite-api.js"></script>
+		<script src="https://ezsite.ai/ezsite-chatbot.js"></script>
+	<meta name="description" content="Discover breathtaking African destinations with our travel blog. Captivating visuals and editable templates for your content."><meta property="og:title" content="Discover Africa's Wonders - Your Travel Inspiration Awaits!"><meta property="og:description" content="Explore stunning African destinations with our visually captivating travel blog. Start your journey today!"><meta name="twitter:title" content="🌍 Explore Africa's Beauty!"><meta name="twitter:description" content="Captivating African destinations await. Dive into our travel blog and start your adventure!"></head>
+	<body>
+		<div id="root"></div>
+		
+		<!-- App Components -->
+		<script type="text/babel" src="App.js"></script>
+		
+		<!-- Page Components -->
+		<script type="text/babel" src="pages/Home.js"></script>
+		<script type="text/babel" src="pages/Blog.js"></script>
+		<script type="text/babel" src="pages/BlogPost.js"></script>
+		<script type="text/babel" src="pages/About.js"></script>
+		<script type="text/babel" src="pages/Contact.js"></script>
+		<script type="text/babel" src="pages/CreateBlogPost.js"></script>
+		
+		<!-- UI Components -->
+		<script type="text/babel" src="components/Header.js"></script>
+		<script type="text/babel" src="components/Footer.js"></script>
+		<script type="text/babel" src="components/HeroSection.js"></script>
+		<script type="text/babel" src="components/FeaturedDestinations.js"></script>
+		<script type="text/babel" src="components/BlogPreview.js"></script>
+		<script type="text/babel" src="components/ChatBot.js"></script>
+		<script type="text/babel">
+        ReactDOM.render(
+            <React.StrictMode>
+                <App />
+            </React.StrictMode>,
+            document.getElementById('root')
+        );
+    
+		</script>
+	</body>
+</html>
