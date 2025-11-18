@@ -40,5 +40,4 @@ Roam Africa is a curated platform that brings Africa’s diverse landscapes, cul
 
 ---
 
-## 📁 Folder Structure *(example)*
 
